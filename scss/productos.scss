@@ -1,0 +1,16 @@
+aside{
+    grid-area: sidebar;
+    width: 100%;
+    height: 33vw;
+    .sidebar-container-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 4vh;
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+        background-image: url(../media/imagenes/pnuevo.png);
+    }
+}
