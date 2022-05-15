@@ -1,5 +1,8 @@
+.info {
+  background-color: white!important;
+}
+
 .wrapper-grid {
-    grid-area: info;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
@@ -7,7 +10,6 @@
     padding-bottom: 10vh;
     padding-top: 10vh;
   }
-
 
   .containerr {
     overflow: hidden;
@@ -51,32 +53,6 @@
     font-size: 0.9rem;
   }
 
-  .btnn{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    height: 40px;
-    background: #000000;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1vw;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: .3s ease-in-out;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-
-    
-
-
-    
-    &:hover{
-      font-size: 1.5vw;
-      
-  }
-
-
-
+.btn-margin{
+  margin-bottom: 1vh;
 }
