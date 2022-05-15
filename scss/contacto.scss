@@ -1,0 +1,123 @@
+.grid-containerdos > * {
+    
+    text-align: center;
+    
+    .grid-containerdos{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "navbar"
+        "maindos"
+        "sidebardos"
+        "footer";
+       
+    }
+
+}
+
+.maindos{
+    grid-area: maindos;
+    background-color: rgb(138, 67, 123);
+    
+}
+
+.sidebardos{
+    grid-area: sidebardos;
+    background-color: rgb(131, 179, 195);
+}
+
+.tittle-form{
+    background-color: #0aa18b;
+    font-family:'Poppins', sans-serif;
+    padding: 3rem;
+    margin: 30rem;
+    font-weight: 700;
+    color: rgb(236, 233, 233);
+    
+}
+
+
+.formulario{
+    text-align: center;
+    width: 50%;
+    padding: 5vh;
+    margin: 1vh;
+    color: #ffff;
+    background-color: rgb(7, 7, 7);
+    font-family:'Poppins', sans-serif;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+   
+@media screen and (max-width: 800px){
+    .formulario{
+    text-align: center;
+    width: 100%;
+    color: #ffff;
+    background-color: rgb(7, 7, 7);
+    font-family:'Poppins', sans-serif;
+    align-items: center;
+    margin-left: 50%;
+    justify-content: center;
+    transform: translateX(-50%);
+    
+}
+}
+
+.fformulario{
+    width: 30vw;
+}
+
+.btnf{
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	height: 40px;
+	background: #141414;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5vw;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease-in-out;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:150vh; 
+    position:relative;
+    height:0;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.banner-imgg {
+    position: absolute;
+    background-image: url(https://images.pexels.com/photos/5245865/pexels-photo-5245865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .profile-imgg {
+    width: 15rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+  }

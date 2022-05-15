@@ -1,0 +1,59 @@
+aside{
+    display: flex;
+    grid-area: sidebar;
+
+img{
+    width: 100%;
+    height: auto;
+}
+.buttonn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 7vw;
+    background: #141414;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px){
+    .buttonn {
+        width: 30vw;
+        height: 10vw;
+    }
+}
+
+.buttonn span {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    transition: .3s ease all;
+}
+
+.buttonn.one{ 
+    position: absolute;
+    transform: translate(-297.5%,350%);
+
+    &:hover {
+        background: $colorosa;
+        transition: .4s ease-in-out all;
+    }
+}    
+
+@media screen and (max-width: 800px){
+    .buttonn.one{ 
+        position: absolute;
+        transform: translate(-215%,190%);
+    }
+}
+
+
+
+}

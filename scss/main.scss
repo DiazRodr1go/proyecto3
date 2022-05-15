@@ -1,0 +1,104 @@
+main{
+    grid-area: main;
+    background-color: #c7e9fb;
+    background-image: $grmain;
+    .destacados{
+        font-family: 'Krona One', sans-serif;
+        border: #000000 solid 0.2rem;
+        font-size: 2vw;
+        justify-content: center;
+        display: flex;
+        margin-top: 5%;
+        background-color: #fff;
+        width: 30%;
+        padding: 2vh 0 2vh 0;
+        margin: 5vh 0 3vw 0;
+        transition: all 1s;
+
+        &:hover{
+            font-size: 3vw;
+            color: #da4a9e;
+        }
+    }
+    
+
+
+    .centered{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .slider-frame {
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+    
+    }
+    
+    @media screen and (max-width: 800px){
+        .slider-frame {
+            width: 70%;
+        }
+    }
+    
+    .slider-frame ul {
+        display: flex;
+        padding: 0;
+        width: 500%;
+        
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    .slider-frame li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider-frame img {
+        width: 100%;
+    }
+    
+    @keyframes slide {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        25% {margin-left: -100%;}
+        40% {margin-left: -100%;}
+        45% {margin-left: -200%;}
+        60% {margin-left: -200%;}
+        65% {margin-left: -300%;}
+        80% {margin-left: -300%;}
+        85% {margin-left: -400%;}
+        100% {margin-left: -400%;} 
+    }
+
+    .buttonn {
+        margin: 2.5vw 0 2.5vw 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 7vw;
+        background: #141414;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .3s ease-in-out;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        
+       &:hover{
+        background: $colorosa;
+        transition: .4s ease-in-out all;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .buttonn {
+        width: 30vw;
+        height: 10vw;
+    }
+}
+}
